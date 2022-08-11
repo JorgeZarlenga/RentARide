@@ -3,15 +3,15 @@
 // https://www.youtube.com/watch?v=gPaBicMaib4
 
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import Tabs from './navigation/Tabs';
 
 const App = () => {
-  return(
+  return (
     <NavigationContainer>
       <Tabs />
     </NavigationContainer>
   );
-}
+};
 
 export default App;
