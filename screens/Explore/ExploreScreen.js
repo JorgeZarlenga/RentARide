@@ -62,13 +62,13 @@ const ExploreScreen = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.container}>
-        <TextInput
+        {/* <TextInput
           style={styles.searchInput}
           onChangeText={onChangeSearchText}
           placeholder="Pesquisar veículos"
           value={searchText}
           inlineImageLeft={icon}
-        />
+        /> */}
         <Text style={styles.welcomeText}>Seja bem-vindo, João!</Text>
         {/* <View>
         <FlatList

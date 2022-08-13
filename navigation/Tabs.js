@@ -11,9 +11,11 @@ import ReservationsScreen from '../screens/ReservationsScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 const Tab = createBottomTabNavigator();
 
-const Tabs = () => {
+const Tabs = ({ navigation, route }) => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+      headerShown: false
+    }}>
       <Tab.Screen
         name="Explorar"
         component={ExploreScreen}

@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#FFF',
+    paddingBottom: 24,
   },
   searchInput: {
     borderWidth: 1,
