@@ -20,7 +20,7 @@ const LoginScreen = ({ navigation, route }) => {
 
     return(
         <View style={styles.container}>
-            <Text style={styles.logoText}>Rent-a-Ride</Text>
+            <Text style={styles.logoText}>Rent a Ride</Text>
             <Text style={styles.welcomeText}>Bem-vindo</Text>
             <TextInput
                 style={styles.loginInput}
@@ -36,6 +36,7 @@ const LoginScreen = ({ navigation, route }) => {
                 placeholder='Senha'
                 value={password}
             />
+            {/* Criar validação para verificar preenchimento de campos */}
             <Button onClick={signIn}/>
             <Text style={styles.loginOptionText}>Esqueceu sua senha?</Text>
             <Text style={styles.loginOptionText}>Cadastre-se</Text>
