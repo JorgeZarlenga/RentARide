@@ -8,7 +8,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import ExploreScreen from '../screens/Explore/ExploreScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import ReservationsScreen from '../screens/ReservationsScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import ProfileScreen from '../screens/Profile/ProfileScreen';
 const Tab = createBottomTabNavigator();
 
 const Tabs = ({ navigation, route }) => {
