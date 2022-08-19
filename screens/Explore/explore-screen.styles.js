@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#FFF',
     paddingBottom: 24,
+    flex: 1,
   },
   searchInput: {
     borderWidth: 1,
@@ -19,22 +20,13 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#0670BF',
   },
-  // item: {
-  //   backgroundColor: 'gray',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   height: 100,
-  //   flex: 1,
-  //   margin: 1,
-  // },
   card: {
     borderWidth: 1,
-    width: '45%',
+    width: '46%',
     backgroundColor: '#F0F0F0',
     borderColor: '#D9DCDD',
     alignItems: 'flex-start',
-    margin: 10,
-    height: '100%',
+    margin: 8,
   },
   cardContainer: {
     flexDirection: 'row',
@@ -43,7 +35,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: '80%',
+    height: 130,
   },
   icon: {
     width: 24,
