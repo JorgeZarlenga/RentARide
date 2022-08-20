@@ -7,7 +7,7 @@ import {
   Text,
   FlatList,
   TextInput,
-  View,
+  TouchableOpacity,
 } from 'react-native';
 import {vehiclesList} from '../../mock/cars';
 
@@ -45,13 +45,15 @@ const ExploreScreen = ({navigation}) => {
         data={vehiclesList}
         keyExtractor={item => String(item.id)}
         renderItem={({item}) => (
-          <View style={styles.card}>
+          <TouchableOpacity
+            style={styles.card}
+            onPress={() => navigation.navigate('DetailsScreen', item)}>
             <Image source={item.image} style={styles.image} />
             <Text style={styles.subtitle}>
               {item.title} {'\n'}
               R$ {item.value}
             </Text>
-          </View>
+          </TouchableOpacity>
         )}
       />
     </SafeAreaView>

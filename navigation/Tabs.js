@@ -5,17 +5,19 @@ import React from 'react';
 import {Image} from 'react-native';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import ExploreScreen from '../screens/Explore/ExploreScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import ReservationsScreen from '../screens/ReservationsScreen';
 import ProfileScreen from '../screens/Profile/ProfileScreen';
+import ExploreScreen from '../screens/Explore/ExploreScreen';
+
 const Tab = createBottomTabNavigator();
 
-const Tabs = ({ navigation, route }) => {
+const Tabs = ({navigation, route}) => {
   return (
-    <Tab.Navigator screenOptions={{
-      headerShown: false
-    }}>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Tab.Screen
         name="Explorar"
         component={ExploreScreen}
