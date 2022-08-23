@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { View, Text, Image } from 'react-native';
+import LinearGradient from "react-native-linear-gradient";
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
 import styles from './profile-screen.styles';
@@ -31,15 +32,29 @@ const ProfileScreen = ({navigation}) => {
         }
     ];
 
+    function handleLogout() {
+        navigation.navigate('LoginScreen');
+    }
+
     return(
         <View style={styles.container}>
-            <View style={styles.profileInfoContainer}>
-                <View style={styles.profileTextsContainer}>
-                    <Text style={styles.greetingText}>Olá, João!</Text>
-                    <Text style={styles.infoAndLogoutTexts}>joao.silva@rent-a-ride.com</Text>
-                    <Text style={styles.infoAndLogoutTexts}>Não é você? <Text style={styles.logoutText}>Sair</Text></Text>
-                </View>
-                <View style={styles.profileImageContainer}>
+            <LinearGradient start={{x: 0, y: 0}} end={{x: 1, y: 0}} colors={['#014D89', '#016FB2']} style={styles.profileInfoContainer}>
+                <View style={styles.profileInfoContainer}>
+                    <View style={styles.profileTextsContainer}>
+                        <Text style={styles.greetingText}>Olá, João!</Text>
+                        <Text style={styles.infoAndLogoutTexts}>joao.silva@rent-a-ride.com</Text>
+                        <View style={styles.logoutInfoContainer}>
+                            <View>
+                                <Text style={styles.infoAndLogoutTexts}>Não é você?&nbsp;</Text>
+                            </View>
+                            <View>
+                                <TouchableOpacity onPress={handleLogout}>
+                                    <Text style={styles.logoutText}>Sair</Text>
+                                </TouchableOpacity>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.profileImageContainer}>
                     <TouchableOpacity>
                         <View style={styles.imageContainer}>
                             <Image
@@ -49,7 +64,8 @@ const ProfileScreen = ({navigation}) => {
                         </View>
                     </TouchableOpacity>
                 </View>
-            </View>
+                </View>
+            </LinearGradient>
                 <ScrollView>
             <View style={styles.settingsContainer}>
                 {/* ScrollView para garantir a visualização de toda a lista mesmo em telas pequenas */}
