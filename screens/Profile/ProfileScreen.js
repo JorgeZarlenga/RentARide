@@ -10,37 +10,44 @@ const ProfileScreen = ({navigation}) => {
 
     const settingsOptions = [
         {
-            icon: require('./../../assets/icons/compass.png'),
+            icon: require('./../../assets/icons/bell.png'),
             settingTitle: 'Notificações'
         },
         {
-            icon: require('./../../assets/icons/compass.png'),
+            icon: require('./../../assets/icons/credit-card.png'),
             settingTitle: 'Meus cartões'
         },
         {
-            icon: require('./../../assets/icons/compass.png'),
+            icon: require('./../../assets/icons/user.png'),
             settingTitle: 'Meus dados'
         },
         {
-            icon: require('./../../assets/icons/compass.png'),
+            icon: require('./../../assets/icons/terms.png'),
             settingTitle: 'Termos e condições'
         },
         {
-            icon: require('./../../assets/icons/compass.png'),
+            icon: require('./../../assets/icons/phone.png'),
             settingTitle: 'Fale conosco'
         }
     ];
 
     return(
         <View style={styles.container}>
-            <View style={styles.profileInfo}>
+            <View style={styles.profileInfoContainer}>
                 <View style={styles.profileTextsContainer}>
-                    <Text>Olá, João!</Text>
-                    <Text>joao.silva@rent-a-ride.com</Text>
-                    <Text>Não é voce? Sair</Text>
+                    <Text style={styles.greetingText}>Olá, João!</Text>
+                    <Text style={styles.infoAndLogoutTexts}>joao.silva@rent-a-ride.com</Text>
+                    <Text style={styles.infoAndLogoutTexts}>Não é você? <Text style={styles.logoutText}>Sair</Text></Text>
                 </View>
                 <View style={styles.profileImageContainer}>
-                    <Text>Imagem de perfil</Text>
+                    <TouchableOpacity>
+                        <View style={styles.imageContainer}>
+                            <Image
+                                source={require('./../../assets/icons/profile-image.png')}
+                                style={styles.profileImage}
+                            />
+                        </View>
+                    </TouchableOpacity>
                 </View>
             </View>
                 <ScrollView>
@@ -59,7 +66,10 @@ const ProfileScreen = ({navigation}) => {
                                 <Text>{settingTitle}</Text>
                             </View>
                             <View style={[styles.settingArrowContainer, styles.elementsCentered]}>
-                                <Text>></Text>
+                            <Image
+                                source={require('./../../assets/icons/setting-arrow.png')}
+                                style={{width: 20, height: 18}}
+                                />
                             </View>
                         </View>
                         {/* View usada como divider */}
