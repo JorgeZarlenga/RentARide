@@ -1,51 +1,50 @@
 /* eslint-disable */
 
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
   },
   profileInfoContainer: {
     height: '25%',
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: '#0265A9',
     alignItems: 'center',
-    justifyContent:'space-around'
+    justifyContent: 'space-around',
   },
   profileTextsContainer: {
     width: '65%',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: '20%',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   },
   greetingText: {
     fontSize: 24,
-    color: '#FFF'
+    color: '#FFF',
   },
   infoAndLogoutTexts: {
     marginTop: 6,
     fontSize: 12,
-    color: '#FFF'
+    color: '#FFF',
   },
   logoutInfoContainer: {
     fontSize: 12,
     color: '#FFF',
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   infoAndLogoutTexts: {
     marginTop: 6,
     fontSize: 12,
-    color: '#FFF'
+    color: '#FFF',
   },
   logoutText: {
     marginTop: 6,
     textDecorationLine: 'underline',
     fontSize: 12,
-    color: '#FFF'
+    color: '#FFF',
   },
   profileImageContainer: {
     display: 'flex',
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 50
+    marginRight: 50,
   },
   profileImage: {
     width: 100,
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
     height: 80,
     display: 'flex',
     flexDirection: 'row',
-    flex: 1
+    flex: 1,
   },
   settingImageContainer: {
     width: '15%',
@@ -81,11 +80,11 @@ const styles = StyleSheet.create({
   },
   settingArrowContainer: {
     width: '15%',
-    flex: 1
+    flex: 1,
   },
   elementsCentered: {
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   settingDivider: {
     borderBottomColor: '#000',
