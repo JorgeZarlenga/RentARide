@@ -1,10 +1,8 @@
 /* eslint-disable */
 
 import React from 'react';
-import {View, Text, Image} from 'react-native';
-import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
+import {View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import {ProfileHeader} from '../../components/ProfileHeader';
-
 import styles from './profile-screen.styles';
 
 const ProfileScreen = ({navigation}) => {
