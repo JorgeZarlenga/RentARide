@@ -11,11 +11,15 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: '#0265A9',
+    alignItems: 'center',
+    justifyContent:'space-around'
   },
   profileTextsContainer: {
     width: '65%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginRight: '20%',
+    backgroundColor: 'transparent'
   },
   greetingText: {
     fontSize: 24,
@@ -26,9 +30,22 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#FFF'
   },
+  logoutInfoContainer: {
+    fontSize: 12,
+    color: '#FFF',
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  infoAndLogoutTexts: {
+    marginTop: 6,
+    fontSize: 12,
+    color: '#FFF'
+  },
   logoutText: {
+    marginTop: 6,
     textDecorationLine: 'underline',
-    borderBottomWidth: 20
+    fontSize: 12,
+    color: '#FFF'
   },
   profileImageContainer: {
     display: 'flex',
@@ -40,6 +57,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
+    marginRight: 50
   },
   profileImage: {
     width: 100,
