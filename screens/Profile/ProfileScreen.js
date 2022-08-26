@@ -2,8 +2,8 @@
 
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
+import {ProfileHeader} from '../../components/ProfileHeader';
 
 import styles from './profile-screen.styles';
 
@@ -37,40 +37,11 @@ const ProfileScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <LinearGradient
-        start={{x: 0, y: 0}}
-        end={{x: 1, y: 0}}
-        colors={['#014D89', '#016FB2']}
-        style={styles.profileInfoContainer}>
-        <View style={styles.profileInfoContainer}>
-          <View style={styles.profileTextsContainer}>
-            <Text style={styles.greetingText}>Olá, João!</Text>
-            <Text style={styles.infoAndLogoutTexts}>
-              joao.silva@rent-a-ride.com
-            </Text>
-            <View style={styles.logoutInfoContainer}>
-              <View>
-                <Text style={styles.infoAndLogoutTexts}>Não é você?&nbsp;</Text>
-              </View>
-              <View>
-                <TouchableOpacity onPress={handleLogout}>
-                  <Text style={styles.logoutText}>Sair</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </View>
-          <View style={styles.profileImageContainer}>
-            <TouchableOpacity>
-              <View style={styles.imageContainer}>
-                <Image
-                  source={require('./../../assets/icons/profile-image.png')}
-                  style={styles.profileImage}
-                />
-              </View>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </LinearGradient>
+      <ProfileHeader
+        onPress={() => handleLogout()}
+        greeting={'Olá, João'}
+        email={'joao.silva@rent-a-ride.com'}
+      />
       <ScrollView>
         <View style={styles.settingsContainer}>
           {/* ScrollView para garantir a visualização de toda a lista mesmo em telas pequenas */}

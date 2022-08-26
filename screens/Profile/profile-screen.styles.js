@@ -6,64 +6,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  profileInfoContainer: {
-    height: '25%',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-  profileTextsContainer: {
-    width: '65%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: '20%',
-    backgroundColor: 'transparent',
-  },
-  greetingText: {
-    fontSize: 24,
-    color: '#FFF',
-  },
-  infoAndLogoutTexts: {
-    marginTop: 6,
-    fontSize: 12,
-    color: '#FFF',
-  },
-  logoutInfoContainer: {
-    fontSize: 12,
-    color: '#FFF',
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  infoAndLogoutTexts: {
-    marginTop: 6,
-    fontSize: 12,
-    color: '#FFF',
-  },
-  logoutText: {
-    marginTop: 6,
-    textDecorationLine: 'underline',
-    fontSize: 12,
-    color: '#FFF',
-  },
-  profileImageContainer: {
-    display: 'flex',
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+
   // PENDÊNCIA: COLOCAR EM PORCENTAGEM (NÃO FUNCIONOU):
-  imageContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginRight: 50,
-  },
-  profileImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    backgroundColor: '#FFF',
-  },
   settingContainer: {
     height: 80,
     display: 'flex',
