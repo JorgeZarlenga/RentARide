@@ -1,6 +1,6 @@
 import React from 'react';
-import {Text, View, SafeAreaView, Image, ScrollView} from 'react-native';
-import {Header} from '../../components/Header';
+import { Text, SafeAreaView, Image, ScrollView } from 'react-native';
+import { Header } from '../../components/Header';
 import styles from './details-screen.styles';
 
 export const DetailsScreen = ({route, navigation}) => {
