@@ -1,8 +1,9 @@
 /* eslint-disable */
 
 import React from 'react';
-import {View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
-import {ProfileHeader} from '../../components/ProfileHeader';
+import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { ProfileHeader } from '../../components/ProfileHeader';
+import { SettingOption } from '../../components/SettingOption';
 import styles from './profile-screen.styles';
 
 const ProfileScreen = ({navigation}) => {
@@ -40,39 +41,15 @@ const ProfileScreen = ({navigation}) => {
         greeting={'Olá, João'}
         email={'joao.silva@rent-a-ride.com'}
       />
+      {/* ScrollView para garantir a visualização de toda a lista mesmo em telas pequenas */}
       <ScrollView>
         <View style={styles.settingsContainer}>
-          {/* ScrollView para garantir a visualização de toda a lista mesmo em telas pequenas */}
           {settingsOptions.map(({icon, settingTitle}, index) => (
-            <TouchableOpacity key={settingTitle}>
-              <View style={styles.settingContainer}>
-                <View
-                  style={[
-                    styles.settingImageContainer,
-                    styles.elementsCentered,
-                  ]}>
-                  <Image
-                    source={icon}
-                    style={{width: 26, height: 26, fill: '#8F9BB3'}}
-                  />
-                </View>
-                <View style={styles.settingTextContainer}>
-                  <Text>{settingTitle}</Text>
-                </View>
-                <View
-                  style={[
-                    styles.settingArrowContainer,
-                    styles.elementsCentered,
-                  ]}>
-                  <Image
-                    source={require('./../../assets/icons/setting-arrow.png')}
-                    style={{width: 20, height: 18}}
-                  />
-                </View>
-              </View>
-              {/* View usada como divider */}
-              <View style={styles.settingDivider} />
-            </TouchableOpacity>
+            <SettingOption
+              icon={icon}
+              settingTitle={settingTitle}
+              index={index}
+            />
           ))}
         </View>
       </ScrollView>

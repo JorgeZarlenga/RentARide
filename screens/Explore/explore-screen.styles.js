@@ -8,11 +8,12 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     borderWidth: 1,
-    height: 32,
+    height: 46,
     borderRadius: 6,
     marginHorizontal: 10,
     borderColor: '#c7c7c7',
     paddingHorizontal: 12,
+    marginTop: 20,
   },
   welcomeText: {
     fontSize: 25,

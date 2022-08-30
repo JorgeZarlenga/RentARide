@@ -14,6 +14,7 @@ import {vehiclesList} from '../../mock/cars';
 import styles from './explore-screen.styles';
 
 const ExploreScreen = ({navigation}) => {
+
   const [searchText, onChangeSearchText] = React.useState('');
 
   const icon = (
@@ -30,7 +31,7 @@ const ExploreScreen = ({navigation}) => {
         onChangeText={onChangeSearchText}
         placeholder="Pesquisar veículos"
         value={searchText}
-        inlineImageLeft={icon}
+        // inlineImageLeft={icon}
       />
       <Text style={styles.welcomeText}>Seja bem-vindo, João!</Text>
 
