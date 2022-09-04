@@ -1,4 +1,4 @@
-export const vehiclesList = [
+export const vehiclesSource = [
   {
     id: '1',
     title: 'HB20',
@@ -39,12 +39,12 @@ export const vehiclesList = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at vestibulum dui. Sed gravida enim sit amet nisl luctus maximus. Quisque vulputate ligula eu nunc lobortis, nec luctus mi lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at vestibulum dui. Sed gravida enim sit amet nisl luctus maximus. Quisque vulputate ligula eu nunc lobortis, nec luctus mi lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at vestibulum dui. Sed gravida enim sit amet nisl luctus maximus. Quisque vulputate ligula eu nunc lobortis, nec luctus mi lobortis.',
   },
-  /* {
+  {
     id: '6',
     title: 'Jeep Compass',
     value: 300,
     image: require('./../assets/images/compass.jpeg'),
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at vestibulum dui. Sed gravida enim sit amet nisl luctus maximus. Quisque vulputate ligula eu nunc lobortis, nec luctus mi lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at vestibulum dui. Sed gravida enim sit amet nisl luctus maximus. Quisque vulputate ligula eu nunc lobortis, nec luctus mi lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at vestibulum dui. Sed gravida enim sit amet nisl luctus maximus. Quisque vulputate ligula eu nunc lobortis, nec luctus mi lobortis.',
-  }, */
+  },
 ];

@@ -1,6 +1,14 @@
+/* eslint-disable */
+
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  centeredActivityIndicator: {
+    display: 'flex',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   container: {
     backgroundColor: '#FFF',
     paddingBottom: 24,
