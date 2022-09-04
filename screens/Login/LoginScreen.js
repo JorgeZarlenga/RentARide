@@ -1,21 +1,30 @@
 /* eslint-disable */
 
 import React from 'react';
-import {View, Text, TextInput} from 'react-native';
+import { useState, useEffect } from 'react';
+import { View, Text, TextInput, ToastAndroid } from 'react-native';
 
-import {Button} from '../../components/Button';
+import { Button } from '../../components/Button';
 import styles from './login-screen.styles';
 
 const LoginScreen = ({navigation, route}) => {
-  const [email, onChangeEmail] = React.useState('');
-  const [password, onChangePassword] = React.useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   function signIn() {
-    navigation.navigate('Tabs');
+   
+    if (!email) {
+      showToast('Por favor, insira um email');
+    } else if (!password) {
+      showToast('Por favor, insira uma senha');
+    } else {
+      navigation.navigate('Tabs');
+    }
   }
 
-  // USAR SAFEAREAVIEW E KEYBOARDAVOIDINGVIEW?
-  // CRIAR VALIDAÇÃO PARA EMAIL
+  function showToast(message) {
+    ToastAndroid.show(message, ToastAndroid.SHORT);
+  }
 
   return (
     <View style={styles.container}>
@@ -23,18 +32,17 @@ const LoginScreen = ({navigation, route}) => {
       <Text style={styles.welcomeText}>Bem-vindo</Text>
       <TextInput
         style={styles.loginInput}
-        onChangeText={onChangeEmail}
+        onChangeText={(text) => setEmail(text)}
         placeholder="E-mail"
         value={email}
       />
       <TextInput
         style={styles.loginInput}
         secureTextEntry={true}
-        onChangeText={onChangePassword}
+        onChangeText={(text) => setPassword(text)}
         placeholder="Senha"
         value={password}
       />
-      {/* Criar validação para verificar preenchimento de campos */}
       <Button onClick={signIn} />
       <Text style={styles.loginOptionText}>Esqueceu sua senha?</Text>
       <Text style={styles.loginOptionText}>Cadastre-se</Text>
