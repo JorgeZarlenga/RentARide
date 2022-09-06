@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { View, Text, TextInput, ToastAndroid } from 'react-native';
+import { View, Text, TextInput, ToastAndroid, TouchableOpacity } from 'react-native';
 
 import { Button } from '../../components/Button';
 import styles from './login-screen.styles';
@@ -44,8 +44,12 @@ const LoginScreen = ({navigation, route}) => {
         value={password}
       />
       <Button onClick={signIn} />
-      <Text style={styles.loginOptionText}>Esqueceu sua senha?</Text>
-      <Text style={styles.loginOptionText}>Cadastre-se</Text>
+      <TouchableOpacity>
+        <Text style={styles.loginOptionText}>Esqueceu sua senha?</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={styles.loginOptionText}>Cadastre-se</Text>
+      </TouchableOpacity>
     </View>
   );
 };

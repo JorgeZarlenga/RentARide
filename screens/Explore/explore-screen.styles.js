@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: '#FFF',
-    paddingBottom: 24,
     flex: 1,
   },
   searchInput: {
@@ -45,6 +44,14 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 130,
+  },
+  imageError: {
+    flex: 1,
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: 48,
   },
   icon: {
     width: 24,
