@@ -67,12 +67,10 @@ const ExploreScreen = ({navigation}) => {
 
   useEffect(() => {
     if (searchText === '') {
-      console.log('entrou: ', vehiclesSource);
       setVehiclesList(vehiclesSource);
     } else {
       let filteredVehiclesList = vehiclesSource.filter(item => (item.title.toLowerCase().indexOf(searchText.toLowerCase()) > -1));
       setVehiclesList(filteredVehiclesList);
-      console.log('length: ' + filteredVehiclesList.length);
       if (filteredVehiclesList.length === 0) {
         setEmptyFilteredVehiclesList(true);
       } else {
@@ -87,6 +85,7 @@ const ExploreScreen = ({navigation}) => {
         <TextInput
             style={styles.searchInput}
             onChangeText={(text) => setSearchText(text)}
+            placeholderTextColor='#000'
             placeholder="Pesquisar veículos"
             value={searchText}
         />
@@ -125,7 +124,7 @@ const ExploreScreen = ({navigation}) => {
                       source={require('./../../assets/images/magnifiying-glass.png')}
                       style={styles.icon}
                     />
-                    <Text style={{marginTop: 16}}>
+                    <Text style={styles.notFoundText}>
                       Sua pesquisa não retornou nenhum veículo
                     </Text>
                   </View>

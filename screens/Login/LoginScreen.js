@@ -34,6 +34,7 @@ const LoginScreen = ({navigation, route}) => {
         style={styles.loginInput}
         onChangeText={(text) => setEmail(text)}
         placeholder="E-mail"
+        placeholderTextColor='#000'
         value={email}
       />
       <TextInput
@@ -41,6 +42,7 @@ const LoginScreen = ({navigation, route}) => {
         secureTextEntry={true}
         onChangeText={(text) => setPassword(text)}
         placeholder="Senha"
+        placeholderTextColor='#000'
         value={password}
       />
       <Button onClick={signIn} />

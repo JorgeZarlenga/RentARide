@@ -37,6 +37,11 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 6,
     borderColor: '#C7C7C7',
+    color: '#000'
+  },
+  notFoundText: {
+    marginTop: 16,
+    color: '#000'
   },
   welcomeText: {
     fontSize: 25,

@@ -2,9 +2,9 @@
 
 import React from 'react';
 
-import {Image} from 'react-native';
+import { Image } from 'react-native';
 
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FavoritesScreen from '../screens/Favorites/FavoritesScreen';
 import ReservationsScreen from '../screens/Reservations/ReservationsScreen';
 import ProfileScreen from '../screens/Profile/ProfileScreen';

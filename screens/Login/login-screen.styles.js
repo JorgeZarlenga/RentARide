@@ -21,15 +21,18 @@ const styles = StyleSheet.create({
     marginTop: 30,
     fontSize: 30,
     fontWeight: '200',
+    color: '#000'
   },
   loginInput: {
     width: 240,
     height: 40,
     borderWidth: 0.75,
-    marginTop: 30
+    marginTop: 30,
+    color: '#000'
   },
   loginOptionText: {
     marginTop: 24,
+    color: '#000'
   },
   container: {
     flex: 1,

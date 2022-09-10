@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     textAlign: 'center',
     marginTop: -20,
+    color: '#000'
   },
   icon: {
     width: 24,

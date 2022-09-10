@@ -7,7 +7,6 @@ import styles from './details-screen.styles';
 
 export const DetailsScreen = ({route, navigation}) => {
   const item = route.params;
-  console.log(item);
   return (
     <SafeAreaView>
       <Header onClick={() => navigation.goBack()} title={'Detalhes'} />

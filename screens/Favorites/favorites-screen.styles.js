@@ -9,7 +9,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  
+  text: {
+    color: '#000'
+  }
 });
 
 export default styles;

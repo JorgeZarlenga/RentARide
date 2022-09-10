@@ -9,7 +9,7 @@ const FavoritesScreen = ({navigation}) => {
 
     return(
         <View style={styles.container}>
-            <Text>Tela de Favoritos (em construção)</Text>
+            <Text style={styles.text}>Tela de Favoritos (em construção)</Text>
         </View>
     );
     

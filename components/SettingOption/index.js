@@ -18,7 +18,7 @@ export const SettingOption = ({icon, settingTitle, index}) => {
           />
         </View>
         <View style={styles.settingTextContainer}>
-          <Text>{settingTitle}</Text>
+          <Text style={styles.settingText}>{settingTitle}</Text>
         </View>
         <View
           style={[
@@ -43,6 +43,9 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
+  },
+  settingText: {
+    color: '#000'
   },
   settingImageContainer: {
     width: '15%',
