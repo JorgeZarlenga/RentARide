@@ -1,13 +1,11 @@
 /* eslint-disable */
 
-// https://www.youtube.com/watch?v=gPaBicMaib4
-
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/Login/LoginScreen';
 import Tabs from './navigation/Tabs';
-import {DetailsScreen} from './screens/Details/DetailsScreen';
+import { DetailsScreen } from './screens/Details/DetailsScreen';
 
 const Stack = createStackNavigator();
 

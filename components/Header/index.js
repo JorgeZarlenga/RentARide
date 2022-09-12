@@ -1,5 +1,7 @@
+/* eslint-disable */
+
 import React from 'react';
-import {TouchableOpacity, View, Text, StyleSheet, Image} from 'react-native';
+import { TouchableOpacity, View, Text, StyleSheet, Image } from 'react-native';
 
 export const Header = ({onClick, title}) => {
   return (

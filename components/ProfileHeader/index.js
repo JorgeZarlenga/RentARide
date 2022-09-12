@@ -1,7 +1,9 @@
+/* eslint-disable */
+
 import LinearGradient from 'react-native-linear-gradient';
 import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import {StyleSheet} from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const ProfileHeader = ({onPress, greeting, email}) => {
   return (

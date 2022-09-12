@@ -1,4 +1,6 @@
-import {StyleSheet} from 'react-native';
+/* eslint-disable */
+
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   button: {

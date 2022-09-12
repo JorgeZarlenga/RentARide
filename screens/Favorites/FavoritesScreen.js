@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import { View, Text, Image } from 'react-native';
 
 import styles from './favorites-screen.styles';
 
